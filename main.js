@@ -8,3 +8,6 @@ const camera = new THREE.PerspectiveCamera(
     0.1,
     1000
 );
+
+/* レンダラー */
+const renderer = new THREE.WebGLRenderer();
