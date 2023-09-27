@@ -15,3 +15,6 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 document.body.appendChild(renderer.domElement);
+
+/* ボックスのサイズ決定、メッシュ、追加 */
+const geometry = new THREE.BOXGeometry(2, 2, 2);
