@@ -20,3 +20,4 @@ document.body.appendChild(renderer.domElement);
 const geometry = new THREE.BOXGeometry(2, 2, 2);
 const material = new THREE.MeshBasicMaterial({color: 0x0000ff});
 const cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
