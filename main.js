@@ -18,3 +18,4 @@ document.body.appendChild(renderer.domElement);
 
 /* ボックスのサイズ決定、メッシュ、追加 */
 const geometry = new THREE.BOXGeometry(2, 2, 2);
+const material = new THREE.MeshBasicMaterial({color: 0x0000ff});
