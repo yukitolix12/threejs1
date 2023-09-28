@@ -22,7 +22,10 @@ document.body.appendChild(renderer.domElement);
 
 /* ボックスのサイズ決定、メッシュ、追加 */
 const geometry = new THREE.BoxGeometry(2, 2, 2);
-const material = new THREE.MeshBasicMaterial({color: 0x0000ff});
+// const material = new THREE.MeshBasicMaterial({color: 0x0000ff});
+
+const texture = THREE.TextureLoader().load("./textures/minecraft-box.png");
+const material = new THREE.MeshBasicMaterial({map: texture});
 cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
