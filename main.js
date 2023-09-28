@@ -37,9 +37,11 @@ function animate() {
 
 /* ウィンドウ変更時にサイズを維持する処理 */
 function onWindowResize() {
-    camera.aspect = window.InnerWidth / window.innerHeight;
+    camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 }
+
+window.addEventListener("resize", onWindowResize);
 
 animate();
