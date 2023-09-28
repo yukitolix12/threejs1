@@ -49,4 +49,5 @@ function onWindowResize() {
 
 window.addEventListener("resize", onWindowResize);
 
+init();
 animate();
