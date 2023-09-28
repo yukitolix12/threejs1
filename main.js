@@ -35,4 +35,9 @@ function animate() {
     renderer.render(scene, camera);
 }
 
+/* ウィンドウ変更時にサイズを維持する処理 */
+function onWindowResize() {
+    camera.aspect = window.InnerWidth / window.innerHeight;
+}
+
 animate();
