@@ -39,6 +39,7 @@ function animate() {
 function onWindowResize() {
     camera.aspect = window.InnerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
 animate();
